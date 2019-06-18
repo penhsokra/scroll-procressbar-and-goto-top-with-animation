@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Collection Function</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/content.css"><!-- [D]한국어 -->
+<script type="text/javascript" src="../js/comm.fn.1.0.0.js"></script>
+</head>
+<body>
+
+<!-- conent here -->
+<div style="height:500px;background-color:#7C8BE5"></div>
+<div style="height:500px;background-color:#892AF1"></div>
+<div class="container" style="position:relative;height:500px;background-color:#F8DD4F"></div>
+<div class="footer" style="height:400px;background-color:#555248"><h1 style="padding:0;margin:0;text-align:center;color:#fff;">Footer</h1></div>
+<!-- //content here -->
+
+ <!-- (botton)goto -->
+<div class="btn_totop_wrap">
+    <!-- (botton)gotoInquire --><a href="#none" class="btn_gotoInquire"><span class="blind">도입문의</span></a><!-- //(botton)gotoInquire -->
+    <!-- (botton)gotoTop --><a href="#none" class="btn_gotoTop"><span class="blind">go to Top</span></a><!-- //(botton)gotoTop -->
+</div>
+<!-- //(botton)goto -->
+
+<script type="text/javascript">
+
+	$(window).on("scroll load", function() {
+		/* have more botton */
+		$(".btn_totop_wrap").gotoTops({bottom:$.fn.getPosition(-60,40,120),});/* -60 is first laod positon. 40 is start scroll postion. 120 is position fixed top of the footer  */
+		
+		/* have only go to top botton */
+		//$(".btn_totop_wrap").gotoTops({bottom:$.fn.getPosition(-60,40),});/* -60 is first laod positon. 40 is start scroll postion.*/
+
+		/* Function Scroll process bar */
+		$(".progressbar").progressbar({
+			top:0, /* position top of poress bar */
+			bottom:"auto", /* position bottom of poress bar */
+			height:3,/* height of poress bar */
+			zIndex:9999,/* z-index of poress bar */
+			backgroundColor:"red",/* background Color of poress bar */
+		});
+		/* //Function Scroll process bar */
+		
+	});
+</script>
+</body>
+</html>

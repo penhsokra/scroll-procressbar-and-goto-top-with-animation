@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{margin:0;padding:0;}
+/* botton_gotoTop */
+.btn_totop_wrap{position:fixed;width:90px;right:90px;font-size:0;text-align:center;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.4s;z-index:5000;}
+/* btn_gotoInquire */
+.btn_gotoInquire{display:block;width:90px;height:90px;margin-bottom:20px;background:url(../img/btn/btn_meassage.png) no-repeat 0 0;background-size:90px;overflow:hidden;z-index:5001;}
+/* botton_gotoTop */
+.btn_gotoTop{display:inline-block;width:60px;height:60px;margin:0 0 0;background:url(../img/btn/btn_gotoTop.png) no-repeat 0 0;background-size:60px;overflow:hidden;z-index:5001;}
+.btn_gotoTop:hover{background-position:0 0;}
+.blind{position:absolute;top:-100000px;left:-100000px;width:0;height:0;line-height:0;visibility:hidden;overflow:hidden;}
+.noTransition{-moz-transition:none;-webkit-transition:none;-o-transition:color 0 ease-in;transition:none;}
