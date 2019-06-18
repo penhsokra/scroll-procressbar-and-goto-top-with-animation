@@ -1,5 +1,5 @@
 ﻿(function ($){
-
+	/* Develop by Mr Penh Sokra 2016.0618 */
 	/* progressbar bar */
     $.fn.progressbar = function(options) {
 		var progressbar = $(".progressbar").length;
